@@ -75,7 +75,8 @@ class MainActivity : AppCompatActivity() {
                             dbHandler.createChore(chore)
 
 
-                            startActivity(Intent(this, MainActivity::class.java));
+                            startActivity(Intent(this, MainActivity::class.java))
+                            finish()
                         } else {
                             Toast.makeText(this, "You need to fill all fields", Toast.LENGTH_SHORT).show()
                         }
